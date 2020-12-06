@@ -1,0 +1,18 @@
+[0.511s] Invoking command in '/home/ros2_ws/build/ros2_listener': PYTHONPATH=/home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --prefix /home/ros2_ws/install/ros2_listener --editable --build-directory /home/ros2_ws/build/ros2_listener/build --no-deps install_data --install-dir /home/ros2_ws/install/ros2_listener
+[0.906s] running develop
+[1.121s] running egg_info
+[1.122s] writing ros2_listener.egg-info/PKG-INFO
+[1.123s] writing dependency_links to ros2_listener.egg-info/dependency_links.txt
+[1.123s] writing entry points to ros2_listener.egg-info/entry_points.txt
+[1.123s] writing requirements to ros2_listener.egg-info/requires.txt
+[1.123s] writing top-level names to ros2_listener.egg-info/top_level.txt
+[1.199s] reading manifest file 'ros2_listener.egg-info/SOURCES.txt'
+[1.201s] writing manifest file 'ros2_listener.egg-info/SOURCES.txt'
+[1.207s] running build_ext
+[1.210s] Creating /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/site.py
+[1.215s] Creating /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2-listener.egg-link (link to .)
+[1.217s] Installing sensor_distancy_listener script to /home/ros2_ws/install/ros2_listener/lib/ros2_listener
+[1.218s] 
+[1.218s] Installed /home/ros2_ws/build/ros2_listener
+[1.218s] running install_data
+[1.273s] Invoked command in '/home/ros2_ws/build/ros2_listener' returned '0': PYTHONPATH=/home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py develop --prefix /home/ros2_ws/install/ros2_listener --editable --build-directory /home/ros2_ws/build/ros2_listener/build --no-deps install_data --install-dir /home/ros2_ws/install/ros2_listener

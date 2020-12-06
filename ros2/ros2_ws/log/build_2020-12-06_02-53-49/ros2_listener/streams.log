@@ -1,0 +1,37 @@
+[0.457s] Invoking command in '/home/ros2_ws/src/ros2_listener': PYTHONPATH=/home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_listener build --build-base /home/ros2_ws/build/ros2_listener/build install --prefix /home/ros2_ws/install/ros2_listener --record /home/ros2_ws/build/ros2_listener/install.log --single-version-externally-managed
+[0.830s] running egg_info
+[0.833s] creating ../../build/ros2_listener/ros2_listener.egg-info
+[0.833s] writing ../../build/ros2_listener/ros2_listener.egg-info/PKG-INFO
+[0.833s] writing dependency_links to ../../build/ros2_listener/ros2_listener.egg-info/dependency_links.txt
+[0.834s] writing entry points to ../../build/ros2_listener/ros2_listener.egg-info/entry_points.txt
+[0.834s] writing requirements to ../../build/ros2_listener/ros2_listener.egg-info/requires.txt
+[0.834s] writing top-level names to ../../build/ros2_listener/ros2_listener.egg-info/top_level.txt
+[0.839s] writing manifest file '../../build/ros2_listener/ros2_listener.egg-info/SOURCES.txt'
+[0.913s] reading manifest file '../../build/ros2_listener/ros2_listener.egg-info/SOURCES.txt'
+[0.915s] writing manifest file '../../build/ros2_listener/ros2_listener.egg-info/SOURCES.txt'
+[0.915s] running build
+[0.916s] running build_py
+[0.916s] creating /home/ros2_ws/build/ros2_listener/build
+[0.918s] creating /home/ros2_ws/build/ros2_listener/build/lib
+[0.918s] creating /home/ros2_ws/build/ros2_listener/build/lib/ros2_listener
+[0.918s] copying ros2_listener/__init__.py -> /home/ros2_ws/build/ros2_listener/build/lib/ros2_listener
+[0.919s] copying ros2_listener/sensor_distancy_listener.py -> /home/ros2_ws/build/ros2_listener/build/lib/ros2_listener
+[0.919s] running install
+[0.919s] running install_lib
+[0.925s] creating /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener
+[0.925s] copying /home/ros2_ws/build/ros2_listener/build/lib/ros2_listener/__init__.py -> /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener
+[0.926s] copying /home/ros2_ws/build/ros2_listener/build/lib/ros2_listener/sensor_distancy_listener.py -> /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener
+[0.926s] byte-compiling /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener/__init__.py to __init__.cpython-38.pyc
+[0.930s] byte-compiling /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener/sensor_distancy_listener.py to sensor_distancy_listener.cpython-38.pyc
+[0.931s] running install_data
+[0.931s] creating /home/ros2_ws/install/ros2_listener/share/ament_index
+[0.931s] creating /home/ros2_ws/install/ros2_listener/share/ament_index/resource_index
+[0.931s] creating /home/ros2_ws/install/ros2_listener/share/ament_index/resource_index/packages
+[0.932s] copying resource/ros2_listener -> /home/ros2_ws/install/ros2_listener/share/ament_index/resource_index/packages
+[0.932s] copying package.xml -> /home/ros2_ws/install/ros2_listener/share/ros2_listener
+[0.932s] running install_egg_info
+[0.938s] Copying ../../build/ros2_listener/ros2_listener.egg-info to /home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages/ros2_listener-0.0.0-py3.8.egg-info
+[0.938s] running install_scripts
+[0.991s] Installing sensor_distancy_listener script to /home/ros2_ws/install/ros2_listener/lib/ros2_listener
+[0.992s] writing list of installed files to '/home/ros2_ws/build/ros2_listener/install.log'
+[1.028s] Invoked command in '/home/ros2_ws/src/ros2_listener' returned '0': PYTHONPATH=/home/ros2_ws/install/ros2_listener/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_listener build --build-base /home/ros2_ws/build/ros2_listener/build install --prefix /home/ros2_ws/install/ros2_listener --record /home/ros2_ws/build/ros2_listener/install.log --single-version-externally-managed

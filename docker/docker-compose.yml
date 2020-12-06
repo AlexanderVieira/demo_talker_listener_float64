@@ -1,0 +1,93 @@
+version: '3'
+
+networks:
+  rosnet:
+    driver: bridge
+services:
+  # ROS MASTER (ROSCORE)
+  ros_master:
+    image: asilva/ros-master:v1.0
+    build:
+      context: ./config      
+      dockerfile: ros1_master.dockerfile
+    container_name: rosmaster
+    command: roscore
+    environment:
+      ROS_HOSTNAME: rosmaster      
+    networks:
+      - rosnet
+    ports:
+      - "11311:11311"
+
+  # ROS BRIDGE (foxy-ros1-bridge)    
+  ros1_bridge:
+    image: asilva/ros-bridge:v1.0    
+    build:
+      context: ./config      
+      dockerfile: ros1_bridge.dockerfile
+    container_name: ros1_bridge
+    command: ros2 run ros1_bridge dynamic_bridge
+    environment:
+      ROS_HOSTNAME: ros1_bridge
+      ROS_MASTER_URI: http://rosmaster:11311
+    networks:
+      - rosnet
+  
+  # ROS TALKER (noetic-desktop-full)   
+  ros_server:
+    image: asilva/ros_server:v1.0
+    build:
+      context: ./config      
+      dockerfile: ros1.dockerfile
+    container_name: ros_server    
+    environment:
+      ROS_HOSTNAME: ros_server
+      ROS_MASTER_URI: http://rosmaster:11311      
+    networks:
+      - rosnet
+    volumes:
+      - /home/asilva943rj/Desenv/Workspace/Robotica/ros:/home:rw
+    stdin_open: true
+    tty: true
+    entrypoint:
+      - '/bin/bash'    
+
+  # ROS2 LISTENER (nightly-rmw-nonfree)
+  ros2_server:
+    image: asilva/ros2_server:v1.0    
+    build:
+      context: ./config      
+      dockerfile: ros2.dockerfile
+    container_name: ros2_server    
+    environment:
+      ROS_HOSTNAME: ros2_server
+      ROS_MASTER_URI: http://rosmaster:11311    
+    networks:
+      - rosnet
+    volumes:
+      - /home/asilva943rj/Desenv/Workspace/Robotica/ros2:/home:rw
+    stdin_open: true
+    tty: true
+    entrypoint:
+      - '/bin/bash'    
+
+    # ROS RVIZ (noetic-desktop-full)
+  ros_rqt:
+    image: asilva/ros_rqt:v1.0
+    build:      
+      context: ./config      
+      dockerfile: ros1_rqt.dockerfile
+    container_name: ros_rqt    
+    networks:
+      - rosnet
+    environment:
+      - "ROS_MASTER_URI=http://rosmaster:11311"
+      - "ROS_HOSTNAME=ros_rqt"
+      - "DISPLAY"
+      - "QT_X11_NO_MITSHM=1" 
+    volumes:    
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    stdin_open: true      
+    tty: true
+    entrypoint:
+      - '/bin/bash'    
