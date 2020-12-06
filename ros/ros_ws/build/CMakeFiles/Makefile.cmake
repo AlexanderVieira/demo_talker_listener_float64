@@ -15,9 +15,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "ros1_talker/catkin_generated/ordered_paths.cmake"
   "ros1_talker/catkin_generated/package.cmake"
+  "ros_robotics/catkin_generated/package.cmake"
   "/home/ros_ws/src/CMakeLists.txt"
   "/home/ros_ws/src/ros1_talker/CMakeLists.txt"
   "/home/ros_ws/src/ros1_talker/package.xml"
+  "/home/ros_ws/src/ros_robotics/CMakeLists.txt"
+  "/home/ros_ws/src/ros_robotics/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -175,6 +178,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ros_robotics/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ros1_talker/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -189,6 +193,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "ros_robotics/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   "ros1_talker/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
   "ros1_talker/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "ros1_talker/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"

@@ -443,6 +443,12 @@ ros1_talker_BINARY_DIR:STATIC=/home/ros_ws/build/ros1_talker
 //Value Computed by CMake
 ros1_talker_SOURCE_DIR:STATIC=/home/ros_ws/src/ros1_talker
 
+//Value Computed by CMake
+ros_robotics_BINARY_DIR:STATIC=/home/ros_ws/build/ros_robotics
+
+//Value Computed by CMake
+ros_robotics_SOURCE_DIR:STATIC=/home/ros_ws/src/ros_robotics
+
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake
 
@@ -606,7 +612,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

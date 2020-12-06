@@ -35,6 +35,14 @@
 /home/ros_ws/build/gtest/googletest/CMakeFiles/test.dir
 /home/ros_ws/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/ros_ws/build/gtest/googletest/CMakeFiles/gtest.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/install/strip.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/install/local.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/install.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/list_install_components.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/rebuild_cache.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/edit_cache.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/test.dir
+/home/ros_ws/build/ros_robotics/CMakeFiles/_catkin_empty_exported_target.dir
 /home/ros_ws/build/ros1_talker/CMakeFiles/install/strip.dir
 /home/ros_ws/build/ros1_talker/CMakeFiles/install/local.dir
 /home/ros_ws/build/ros1_talker/CMakeFiles/edit_cache.dir

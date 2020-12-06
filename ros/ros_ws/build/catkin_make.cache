@@ -1,2 +1,2 @@
-ros1_talker
+ros1_talker:ros_robotics
 -DCATKIN_DEVEL_PREFIX=/home/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros_ws/install -G Unix Makefiles

@@ -87,6 +87,7 @@ services:
       - "QT_X11_NO_MITSHM=1" 
     volumes:    
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /home/asilva943rj/Desenv/Workspace/Robotica/ros/rqt:/home:rw
     stdin_open: true      
     tty: true
     entrypoint:

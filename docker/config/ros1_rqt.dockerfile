@@ -4,7 +4,7 @@ FROM osrf/ros:noetic-desktop-full
 
 ENV ROS_DISTRO=noetic
 ENV ROS_ROOT=/opt/ros/${ROS_DISTRO}
-ENV ROS_WS=/root/ros_ws
+ENV ROS_WS=/home/ros_ws
 
 # add the ROS deb repo to the apt sources list
 RUN apt-get update && \
