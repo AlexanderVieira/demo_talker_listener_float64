@@ -6,7 +6,7 @@ networks:
 services:
   # ROS MASTER (ROSCORE)
   ros_master:
-    image: asilva/ros-master:v1.0
+    image: asilva/ros_master:v1.0
     build:
       context: ./config      
       dockerfile: ros1_master.dockerfile
@@ -21,7 +21,7 @@ services:
 
   # ROS BRIDGE (foxy-ros1-bridge)    
   ros1_bridge:
-    image: asilva/ros-bridge:v1.0    
+    image: asilva/ros_bridge:v1.0    
     build:
       context: ./config      
       dockerfile: ros1_bridge.dockerfile

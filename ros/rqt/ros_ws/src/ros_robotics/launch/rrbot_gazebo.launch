@@ -14,7 +14,7 @@
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
-	 command="$(find xacro)/xacro --inorder '$(find ros_robotics)/urdf/rrbot4.xacro'" />
+	 command="$(find xacro)/xacro '$(find ros_robotics)/urdf/rrbot.xacro'" />
 
   <!-- Spawn rrbot into Gazebo -->
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"

@@ -32,7 +32,8 @@ RUN apt-get update && \
     libpython3-dev \
     python3-rosdep \
     python3-rosinstall-generator \
-    python3-vcstool \       
+    python3-vcstool \
+    python3-pip \
     build-essential && \
     rm /etc/ros/rosdep/sources.list.d/20-default.list && \
     rosdep init && \
@@ -42,6 +43,10 @@ RUN apt-get update && \
 WORKDIR ${ROS_WS}
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+RUN apt-get update \
+    && apt-get -y upgrade
+
 RUN source ${ROS_ROOT}/setup.bash
 RUN echo "source ${ROS_ROOT}/setup.bash" >> /root/.bashrc
 RUN printf "export QT_GRAPHICSSYSTEM=native\nsource ${ROS_ROOT}/setup.bash" >> ${ROS_WS}/.bashrc

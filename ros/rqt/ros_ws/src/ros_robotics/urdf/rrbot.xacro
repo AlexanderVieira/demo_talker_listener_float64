@@ -137,6 +137,6 @@
     <actuator name="motor2">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission>
+  </transmission>  
 
 </robot>
