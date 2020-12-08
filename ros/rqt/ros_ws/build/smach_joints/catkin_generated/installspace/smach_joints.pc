@@ -1,0 +1,8 @@
+prefix=/home/ros_ws/install
+
+Name: smach_joints
+Description: Description of smach_joints
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,2 +1,2 @@
-ros_robotics
+ros_robotics:smach_joints
 -DCATKIN_DEVEL_PREFIX=/home/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros_ws/install -G Unix Makefiles
