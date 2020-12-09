@@ -3,7 +3,9 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /RobotModel1/Links1/mid_link1/Position1
+        - /RobotModel1/Links1/mid_link1/Orientation1
       Splitter Ratio: 0.8073089718818665
     Tree Height: 578
   - Class: rviz/Selection
@@ -145,6 +147,16 @@ Visualization Manager:
                     {}
       Update Interval: 0
       Value: true
+    - Alpha: 0.5
+      Buffer Length: 1
+      Class: rviz/Range
+      Color: 255; 255; 255
+      Enabled: true
+      Name: Range
+      Queue Size: 10
+      Topic: ""
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 163; 163; 163
@@ -173,7 +185,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.790972709655762
+      Distance: 12.432218551635742
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -189,9 +201,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4597961902618408
+      Pitch: 0.2053983509540558
       Target Frame: <Fixed Frame>
-      Yaw: 0.0022179987281560898
+      Yaw: 0.0003987271338701248
     Saved: ~
 Window Geometry:
   Displays:
@@ -209,5 +221,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1080
-  X: 386
+  X: 280
   Y: 148

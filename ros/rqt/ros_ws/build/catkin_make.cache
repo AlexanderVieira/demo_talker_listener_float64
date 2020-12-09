@@ -1,2 +1,2 @@
-ros_robotics:smach_joints
+flexbe_app:flexbe_behavior_engine/flexbe_behavior_engine:flexbe_behavior_engine/flexbe_core:flexbe_behavior_engine/flexbe_input:flexbe_behavior_engine/flexbe_mirror:flexbe_behavior_engine/flexbe_msgs:flexbe_behavior_engine/flexbe_onboard:flexbe_behavior_engine/flexbe_states:flexbe_behavior_engine/flexbe_testing:flexbe_behavior_engine/flexbe_widget:ros_robotics:smach_joints
 -DCATKIN_DEVEL_PREFIX=/home/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros_ws/install -G Unix Makefiles
