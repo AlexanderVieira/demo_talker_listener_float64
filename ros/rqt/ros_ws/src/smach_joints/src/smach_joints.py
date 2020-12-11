@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
   rospy.init_node('test_fsm', anonymous=True)
   sm = StateMachine(outcomes=['success'])
-  sm.userdata.sm_input = 0
+  sm.userdata.sm_input = 1
   with sm:
     StateMachine.add('A', A(), transitions={'1':'B','0':'D'}, remapping={'input':'sm_input','output':'input'})
     StateMachine.add('B', B(), transitions={'1':'C','0':'A'}, remapping={'input':'sm_input','output':'input'})
